@@ -6,12 +6,17 @@ public class conta  {
     private Double saldo;
 
     public Double sacar(Double valor){
+
         return 0.0;
     }
     public Double depositar(Double valor){
-        return 0.0;
+        if(valor == null || valor <=0)
+            throw new IllegalArgumentException("depósito mínimo de 1 centavo");
+        saldo += valor;
+        return saldo;
     }
     public Integer getNumero(){
+
         return numero;
     }
     public void setNumero(Integer numero){
@@ -20,5 +25,18 @@ public class conta  {
 
         this.numero = numero;
     }
+    public void setSaldo(Double saldo){
+
+        this.saldo = saldo;
+    }
+    public Double getSaldo(){
+
+        return saldo;
+
+    }
+
+
 
 }
+
+
