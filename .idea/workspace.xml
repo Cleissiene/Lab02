@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1be0e742-665b-40ed-a6ab-ce80edc1e8e0" name="Changes" comment="Feat: ObtMain">
+      <change afterPath="$PROJECT_DIR$/src/br/newtonpaiva/dominio/ContaEspecial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/newtonpaiva/dominio/Transferencia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/newtonpaiva/dominio/conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/newtonpaiva/dominio/conta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/newtonpaiva/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/newtonpaiva/ui/Main.java" afterDir="false" />
@@ -14,6 +16,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>

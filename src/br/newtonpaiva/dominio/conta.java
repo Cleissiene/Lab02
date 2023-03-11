@@ -2,7 +2,7 @@ package br.newtonpaiva.dominio;
 
 import java.util.Objects;
 
-public class conta  {
+public class conta implements Transferencia {
     private Integer numero;
 
     private Double saldo;
