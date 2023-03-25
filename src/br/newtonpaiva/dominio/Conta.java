@@ -2,21 +2,31 @@ package br.newtonpaiva.dominio;
 
 import java.util.Objects;
 
-public class conta implements Transferencia {
+public class Conta implements Transferencia {
     private Integer numero;
 
     private Double saldo;
 
- //construtor
-    public conta(){
+    private Pessoa pessoa;
+
+    public Pessoa getPessoa() {
+        return pessoa;
+    }
+
+    public void setPessoa(Pessoa pessoa) {
+        this.pessoa = pessoa;
+    }
+
+    //construtor
+    public Conta(){
         this(null);
     }
 //construtor
-    public conta(Integer numero){
+    public Conta(Integer numero){
         this(numero, 0.0);
     }
 //construtor
-    public conta(Integer numero, Double saldo){
+    public Conta(Integer numero, Double saldo){
         this.numero = numero;
         this.saldo = saldo;
     }
@@ -30,7 +40,7 @@ public class conta implements Transferencia {
         saldo += valor;
         return saldo;
     }
-    public void transferir(conta destino, Double valor){
+    public void transferir(Conta destino, Double valor){
         if(this.getSaldo() < valor)
             throw new IllegalArgumentException( "Invalido");
 
@@ -64,7 +74,7 @@ public class conta implements Transferencia {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        conta conta = (conta) o;
+        Conta conta = (Conta) o;
         return Objects.equals(numero, conta.numero);
     }
 

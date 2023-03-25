@@ -4,18 +4,18 @@ import br.newtonpaiva.dominio.*;
 
 public class Main {
     public static void main(String[] args) {
-        conta c = new conta(10);
+        Conta c = new Conta(10);
 //        c.setNumero(10);
         c.setSaldo(100.0);
 
         c.depositar( 50.0);
 //        c.depositar( 50.0);
 
-        conta c2 = new conta();
+        Conta c2 = new Conta();
         c2.setNumero (10);
         c2.setSaldo(500.0);
 
-        conta c3 = new conta();
+        Conta c3 = new Conta();
 
         if(c.equals(c2)){
             System.out.println("Contas iguais");
@@ -38,6 +38,32 @@ public class Main {
 
                 for(Pessoa p : pessoas)
                     p.validarDocumento();
+
+                Conta conta = new ContaEspecial();
+                conta.setNumero(111111111);
+                conta.setSaldo(100000.00);
+
+
+                Pessoa cleissi = new PessoaFisica();
+                     cleissi.setNome("Cleissi");
+                     cleissi.getContas().add(conta);
+
+
+
+
+                     //cleissi.setConta(conta);
+
+                     conta.setPessoa(cleissi);
+
+                     //cleissi.getContas().depositar(50000.00);
+
+                    System.out.println(conta.getPessoa().getNome());
+        //System.out.println(cleissi.getContas().getSaldo());
+
+
+
+
+        //System.out.println(p.getConta().getSaldo());
             }
         }
 

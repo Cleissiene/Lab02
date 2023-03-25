@@ -1,6 +1,6 @@
 package br.newtonpaiva.dominio;
 
-public class ContaEspecial extends conta{ // extends indica que a class ContaEspecial é
+public class ContaEspecial extends Conta { // extends indica que a class ContaEspecial é
                                           // uma herança(subclasse) da classe conta/ só pode usar uma vez
 
     private Double limite;
